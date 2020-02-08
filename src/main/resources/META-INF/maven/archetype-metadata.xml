@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  name="aws-cdk-scala-archetype"
+  xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
+  <fileSets>
+    <fileSet encoding="UTF-8" filtered="true" packaged="true">
+      <directory>src/main/scala</directory>
+      <includes>
+        <include>**/*.scala</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8" filtered="true" packaged="true">
+      <directory>src/test/scala</directory>
+      <includes>
+        <include>**/*.scala</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8" filtered="true">
+      <directory></directory>
+      <includes>
+        <include>__gitignore__</include>
+        <include>README.md</include>
+        <include>cdk.json</include>
+        <include>cdk.context.json</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <requiredProperties>
+    <requiredProperty key="gitignore"><defaultValue>.gitignore</defaultValue></requiredProperty>
+    <requiredProperty key="package"><defaultValue>${groupId}</defaultValue></requiredProperty>
+  </requiredProperties>
+
+</archetype-descriptor>
