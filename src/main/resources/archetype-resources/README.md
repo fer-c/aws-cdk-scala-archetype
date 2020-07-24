@@ -1,4 +1,4 @@
-# Welcome to your ${artifactId} CDK Java project!
+# Welcome to your ${artifactId} CDK Scala project!
 
 This is a blank project for Scala development with CDK & Maven.
 

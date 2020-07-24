@@ -12,11 +12,11 @@ cdk init app --language=java
 ```shell script
 
 mvn archetype:generate -B \
-    -DgroupId=com.myorg \
-    -DartifactId=HelloCdk \
     -Dversion=1.0-SNAPSHOT \
-    -DarchetypeGroupId=com.awscdk.architypes \
-    -DarchetypeArtifactId=aws-cdk-scala-archetype 
+    -DarchetypeGroupId=com.awscdk.archetype \
+    -DarchetypeArtifactId=aws-cdk-scala-archetype \
+    -DgroupId=com.myorg \
+    -DartifactId=HelloCdk 
 
 ```
 
